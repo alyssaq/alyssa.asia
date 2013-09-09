@@ -1,0 +1,28 @@
+application: gae-seed
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: app/css
+
+- url: /js
+  static_dir: app/js
+
+- url: /js/libs
+  static_dir: app/js/libs
+
+- url: /.*
+  script: webserver.application
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
