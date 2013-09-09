@@ -8,7 +8,7 @@ import jinja2
 import webapp2
 
 JINJA_ENVIRONMENT = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), "app")),
+    loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), "app", "templates")),
     extensions=['jinja2.ext.autoescape'])
 
 DEFAULT_GUESTBOOK_NAME = 'default_guestbook'
@@ -32,7 +32,7 @@ class Greeting(ndb.Model):
 
 class MainPage(webapp2.RequestHandler):
 
-    def get(self):
+    def get(self, base_href):
         guestbook_name = self.request.get('guestbook_name',
                                           DEFAULT_GUESTBOOK_NAME)
         greetings_query = Greeting.query(
@@ -51,9 +51,14 @@ class MainPage(webapp2.RequestHandler):
             'guestbook_name': urllib.quote_plus(guestbook_name),
             'url': url,
             'url_linktext': url_linktext,
+            'title': 'Alyssa'
         }
+        filename = base_href if bool(base_href) else "index"
+        try:
+            template = JINJA_ENVIRONMENT.get_template("%s.html" % filename)
+        except jinja2.TemplateNotFound:    
+            template = JINJA_ENVIRONMENT.get_template("404.html")
 
-        template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render(template_values))
 
 
@@ -79,6 +84,6 @@ class Guestbook(webapp2.RequestHandler):
 
 
 application = webapp2.WSGIApplication([
-    ('/', MainPage),
-    ('/sign', Guestbook),
+    ('/sign',    Guestbook),
+    (r"/(.*)/?", MainPage)
 ], debug=True)
