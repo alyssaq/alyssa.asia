@@ -1,25 +1,124 @@
 {% extends "_base.html" %}
 {% block bodycontent %}
-  {% for greeting in greetings %}
-    {% if greeting.author %}
-      <b>{{ greeting.author.nickname() }}</b> wrote:
-    {% else %}
-     An anonymous person wrote:
-    {% endif %}
-    <blockquote>{{ greeting.content }}</blockquote>
-  {% endfor %}
 
-  <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
-    <div><textarea name="content" rows="3" cols="60"></textarea></div>
-    <div><input type="submit" value="Sign Guestbook"></div>
-  </form>
+<h4 class="text-center"> I love software development: web and cross-platform mobile applications. <br>
 
-  <hr>
+ Javascript fan-girl, python tinkerer & computer vision drooler. <br> Seeking learning opportunities with mentors.
+</h4>
 
-  <form>Guestbook name:
-    <input value="{{ guestbook_name }}" name="guestbook_name">
-    <input type="submit" value="switch">
-  </form>
+<h3>Employment</h3>
+<hr>
+<div class="row">
+  <div class="col-xs-4 col-sm-4">Solutions/Pre-sales Engineer</div>
+  <div class="col-xs-4 col-sm-4 text-center">Integrated Research, Singapore <br>
+    <small class="hidden-xs"> Public Company (IRI); 2 employees; IT industry </small>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-right">May 2013 - Present</div>
+</div>
+<ul>
+  <li>
+  Expanded to Asia with one sales manager to strengthen and 
+  establish new industry partner relationships.
+  </li>
+  <li>
+  Designed and deployed solutions to monitor large enterprise’s 
+  unified communications & virtualization environment.
+  </li>
+  <li>
+  Taught a 2-week product training course to our new Asia partners. 
+  Promoted the product in industry trade shows.
+  </li>
+  <li>
+  Lots of travel to customer-sites to perform demos to executive decision-makers. 
+  Collaborated with partners and end-customers to identify business & technical pains 
+  and tailor monitoring solutions. 
+  Had to quickly pick up new technologies and understand 
+  vendor products: Cisco, Avaya, VMware, etc.
+  </li>
+</ul>
 
-  <a href="{{ url|safe }}">{{ url_linktext }}</a>
+<div class="row">
+  <div class="col-xs-4 col-sm-4">Software Engineer</div>
+  <div class="col-xs-4 col-sm-4 text-center">Integrated Research, Sydney <br>
+    <small class="hidden-xs"> Public Company (IRI); ~200 employees; IT industry </small>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-right">Feb 2011 – May 2013 (2 yrs 3mths)</div>
+</div>
+<ul>
+  <li>
+  Desktop application development in C++ and C for Prognosis (real-time cross-platform communications and infrastructure monitoring software) and in C# for the Windows configuration tool.
+  </li>
+  <li>  
+  Debugged and solved a bug in legacy C for a high-support tier customer (2 weeks inclu weeknights & weekends).
+  </li>
+  <li>
+  Built enterprise web application from scratch using ASP.NET MVC framework. Worked in Agile-Scrum TDD in a team of 5-7.
+  </li>
+  <li>
+  Web languages/tools: C#, WCF (to build RESTful web service), FusionCharts (3rd-party lib for SVG charts), JQuery, Dojo, QUnit (JS unit tests), Selenium (web browser automation), ccm (measure JS complexity), SourceMonitor (C#, C++ complexity)
+  </li>
+  <li>
+  Debugged browser memory leak in a 3rd-party charting library, reducing from exponential to logarithmic growth by freeing DOM references and reducing deeply nested views.
+  </li>
+  <li>
+  Other Tools: SVN, Jira, Visual studio 2003/2010, in-house code-review tool.
+  </li>
+</ul>
+
+<div class="row">
+  <div class="col-xs-4 col-sm-4">Research Scholar</div>
+  <div class="col-xs-4 col-sm-4 text-center">NICTA, Sydney <br>
+    <small class="hidden-xs"> Non-profit; ~700 employees; Research industry </small>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-right">Dec 2009 – Mar 2010 (4 mths)</div>
+</div>
+
+<b> Project Title: </b> Appearance-based Re-identification of People in Video (surveillance videos)
+<ul>
+  <li>
+  Implemented a height estimation module for a human re-identification system in C++ and C, with OpenCV library. 
+  </li>
+  <li>
+  Researched a method that was free of camera calibration and for single-view videos. The final implemented algorithm used vanishing points from projective geometry. Attended annual CV camp for a week. 
+  </li>
+</ul>
+
+<h3>Education</h3>
+<hr>
+<div class="text-center row">University of Sydney </div>
+<big>Bachelor of Information Technology (1st class Hons) </big> <br>
+<b> Thesis: </b> Structural Image Classification with Graph Neural Networks <br>
+<b> Publication: </b> Structural Image Classification with Graph Neural Networks (DICTA; Dec 2011; pp. 416–421)  
+<br>
+<b> University Honours/Awards: </b> 
+<br>
+<ul>
+  <li>
+  Uni of Sydney Academic Merit Prize for the highest performing undergraduate based on average marks (2010) 
+  </li>
+  <li>
+  High Honor Roll by maintaining high distinction (over 85%) for the year (2009)
+  </li>
+  <li>
+  Microsoft Research Asia Prize for Senior Software Development Projects Award. Built a self-assessment module for an open-source learning management system, Moodle. Worked in a group with 4 hard-working strangers (2009)
+  </li>
+</ul>
+<b>Honours Coursework: </b> Knowledge discovery and data mining (machine learning); Multimedia storage & retrieval 
+(feature extraction, indexing, video streaming, compression, storage structures); parallel and distributed computing <br>
+<b> Undergraduate Coursework: </b> OO design, graphics & digital media processing; management of IT projects & systems; human-computer interaction; algorithms; operating systems & machine principles; systems analysis & modeling.
+
+<h3>Projects</h3>
+<hr>
+
+<ul>
+  <li>
+  Creator of <a href="http://www.dilivr.it">dilivr.it</a> (on-demand delivery service). Powered by Python Google App Engine with AngularJS, Bootstrap.  
+  In progress: mobile application built with trigger.io, parse, and using Google Maps JS API. 
+  </li>
+  <li>
+  Built the MVP mobile-application with Titanium Alloy for a friend’s start-up over 3mths. Social makeup community.
+  </li>
+</ul>
+<b> Passions and interests: </b> Software development, web applications, weekly javascript bookclub, computer vision, recognition, machine learning. In my ideal world, I would be building a fun ubiquitous application powered by recognition and learning.
+<p class="bottom"></p>
 {% endblock %}

@@ -1,0 +1,27 @@
+{
+  "name": "alyssa-quek",
+  "version": "0.0.1",
+  "description": "alyssa-quek online resume",
+  "main": "webserver.py",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-jshint": "~0.7.1",
+    "load-grunt-config": "0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alyssaq/alyssa.asia.git"
+  },
+  "keywords": [
+    "alyssa quek"
+  ],
+  "author": "Alyssa Quek",
+  "bugs": {
+    "url": "https://github.com/alyssaq/alyssa.asia/issues"
+  },
+  "licenses": [{
+    "type": "All rights reserved"
+  }]
+}
