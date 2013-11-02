@@ -4,13 +4,16 @@
 Powered By Google App Engine - Python 2.7
 
 ## Runnning alyssa.asia locally
-Clone the repository
+Clone the repository  
+
     > git clone https://github.com/alyssaq/alyssa.asia.git
 
 Get node dependencies (Assuming [nodejs](nodejs.org) and [npm](npmjs.org) is installed)
+
     > npm install
 
 Build production-ready site (Assuming [grunt](gruntjs.com) is installed)
+
     > grunt 
 
 Run the site using GoogleAppEngineLauncher. 
