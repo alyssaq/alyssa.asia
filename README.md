@@ -1,4 +1,4 @@
-[alyssa.asia](www.alyssa.asia) static site
+[alyssa.asia](http://www.alyssa.asia) static site
 =========
 
 Powered By Google App Engine - Python 2.7
@@ -8,11 +8,11 @@ Clone the repository
 
     > git clone https://github.com/alyssaq/alyssa.asia.git
 
-Get node dependencies (Assuming [nodejs](nodejs.org) and [npm](npmjs.org) is installed)
+Get node dependencies (Assuming [nodejs](http://nodejs.org) and [npm](https://npmjs.org) is installed)
 
     > npm install
 
-Build production-ready site (Assuming [grunt](gruntjs.com) is installed)   
+Build production-ready site (Assuming [grunt](http://gruntjs.com) is installed)   
 Html, css will be minimised and client & server files copied to *app* folder   
 
     > grunt 
