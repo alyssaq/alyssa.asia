@@ -12,9 +12,14 @@ Get node dependencies (Assuming [nodejs](nodejs.org) and [npm](npmjs.org) is ins
 
     > npm install
 
-Build production-ready site (Assuming [grunt](gruntjs.com) is installed)
+Build production-ready site (Assuming [grunt](gruntjs.com) is installed)   
+Html, css will be minimised and files copied too *app* folder   
 
     > grunt 
+
+To watch for file changes and build site:
+  
+    > grunt dev
 
 Run the site using GoogleAppEngineLauncher. 
 More details in next section.
@@ -22,10 +27,10 @@ More details in next section.
 ### Running Google App Engine dev webserver
 You can run the development web server either via GoogleAppEngineLauncher or command line.
 
-Command Line to start at port 8000:    
+Command Line to start at port 9000 and admin port 9009:    
 *Note: Assumes that GoogleAppEngineLauncher has created a symlink to dev_appserver.py* 
 
-    > dev_appserver.py appengine_content/ --skip_sdk_update_check=yes --port=8000 --admin_port=8009
+    > dev_appserver.py appengine_content/ --skip_sdk_update_check=yes --port=9000 --admin_port=9009
 
 ### Get Started with app engine
 https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld

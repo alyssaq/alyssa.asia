@@ -1,0 +1,62 @@
+/* Just click to select the code */
+ 
+@charset "UTF-8";
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg"),
+    url("fonts/untitled-font-1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  font-size: 25px;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {content: "t";} 
+.icon-github:before  {content: "g";} 
+.icon-printer:before {content: "p";}
+
+body { padding-top: 153px; }
+.name {font-weight: bold; color:black;}
+h3 {text-align: center;}
+.row{color:darkseagreen;}
+.nav-subrow, big{color:darkslategray;}
+b {color: slategray;}
+.social-btns {padding: 0;}
+.img-li {display:inline; list-style-type:none;}
+.btn-link {display:inline-block; color: #808080; width:25px; height:25px; border: 5px transparent;}
+.icon-github {margin-left:10px;}
+.icon-twitter:hover{color: #4099FF;}
+.icon-github:hover{color: #1E285F;}
+.icon-printer:hover{color: #C4AEAD;}
+.navbar-fixed-top {background-color: white;}
+.text-right {padding-right:5px;}
+.bottom {padding-bottom:40px;}
+a:hover {text-decoration:none !important;}
+@media print {
+  .navbar-fixed-top {position:relative !important;}
+  .social-btns {display:none;}
+  .nav-subrow {margin-top:-35px;}
+  small {font-size:8px !important;}
+  hr {display:none;}
+  body { padding-top: 0px; margin-top: -10px; font-size:12px !important;}
+  .bodycontent {padding-left: 5px;}
+  .col-sm-4, .col-xs-6 {width:33.3% !important;}
+  h3,h2 {font-weight: bold !important;
+    padding:5px 0px 5px 0px!important; margin:0px !important;}
+  h3:before, h3:after {content: "----";}
+  h3, h4 {font-size:12px !important;}
+  .bottom{padding:0px;}
+}

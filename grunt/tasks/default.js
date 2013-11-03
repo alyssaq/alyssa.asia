@@ -1,5 +1,8 @@
 module.exports = function (grunt) {
 	grunt.registerTask('default', [
-		'jshint'
+    'htmlmin',
+    'cssmin',
+		'jshint',
+    'copy:production'
 	]);
 };
