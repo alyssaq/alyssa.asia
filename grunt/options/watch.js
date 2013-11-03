@@ -7,7 +7,7 @@ module.exports = {
     ],
     tasks: [
       'jshint',
-      'copy'
+      'copy:clientfiles'
     ]
   },
   css: {
@@ -15,7 +15,7 @@ module.exports = {
       '<%= source %>/css/*.css'
     ],
     tasks: [
-      'copy'
+      'cssmin'
     ]
   },
   html: {
@@ -25,6 +25,14 @@ module.exports = {
     tasks: [
       'htmlmin'
     ]
-  }
+  },
+  serverfiles: {
+    files: [
+      'webserver.py',
+    ],
+    tasks: [
+      'copy:serverfiles'
+    ]
+  },
 };
 

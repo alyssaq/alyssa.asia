@@ -1,5 +1,5 @@
 module.exports = {
-  production: {
+  clientfiles: {
     files: [{
       expand: true,
       cwd: '<%= source %>/',
@@ -7,7 +7,17 @@ module.exports = {
       src: [
         //'js/*.js',
         'css/**/*.{eot,svg,ttf,woff}',
-        'img/**/*.{jpg,jpeg,gif,png,ico,webp}'
+        //'img/**/*.{jpg,jpeg,gif,png,ico,webp}'
+      ]
+    }]
+  },
+  serverfiles: {
+    files: [{
+      expand: true,
+      dest: '<%= production %>/',
+      src: [
+        'app.yaml',
+        'webserver.py'
       ]
     }]
   }

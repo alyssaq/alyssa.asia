@@ -13,7 +13,7 @@ Get node dependencies (Assuming [nodejs](nodejs.org) and [npm](npmjs.org) is ins
     > npm install
 
 Build production-ready site (Assuming [grunt](gruntjs.com) is installed)   
-Html, css will be minimised and files copied too *app* folder   
+Html, css will be minimised and client & server files copied too *app* folder   
 
     > grunt 
 
@@ -21,8 +21,8 @@ To watch for file changes and build site:
   
     > grunt dev
 
-Run the site using GoogleAppEngineLauncher. 
-More details in next section.
+From the *app* folder, run the site using GoogleAppEngineLauncher or command line. 
+More details on running using GAE in next section.
 
 ### Running Google App Engine dev webserver
 You can run the development web server either via GoogleAppEngineLauncher or command line.

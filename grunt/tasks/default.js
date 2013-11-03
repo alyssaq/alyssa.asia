@@ -3,6 +3,6 @@ module.exports = function (grunt) {
     'htmlmin',
     'cssmin',
 		'jshint',
-    'copy:production'
+    'copy'
 	]);
 };

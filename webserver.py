@@ -2,8 +2,10 @@ import os
 import jinja2
 import webapp2
 
+HTML_PATH = "templates"
+
 JINJA_ENVIRONMENT = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), "app", "templates")),
+    loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), HTML_PATH)),
     extensions=['jinja2.ext.autoescape'])
 
 class MainPage(webapp2.RequestHandler):
