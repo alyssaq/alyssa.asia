@@ -24,4 +24,4 @@ class MainPage(webapp2.RequestHandler):
 
 application = webapp2.WSGIApplication([
     (r"/(.*)/?", MainPage)
-], debug=True)
+], debug=False)

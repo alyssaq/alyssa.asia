@@ -44,6 +44,8 @@ b {color: slategray;}
 .navbar-fixed-top {background-color: white;}
 .text-right {padding-right:5px;}
 .bottom {padding-bottom:40px;}
+.highlight-o {color: #FA6900}
+.highlight-p {color: #AF4BC3}
 a:hover {text-decoration:none !important;}
 @media print {
   .navbar-fixed-top {position:relative !important;}
@@ -54,9 +56,12 @@ a:hover {text-decoration:none !important;}
   body { padding-top: 0px; margin-top: -10px; font-size:12px !important;}
   .bodycontent {padding-left: 5px;}
   .col-sm-4, .col-xs-6 {width:33.3% !important;}
-  h3,h2 {font-weight: bold !important;
+  h3,h2{font-weight: bold !important;
     padding:5px 0px 5px 0px!important; margin:0px !important;}
   h3:before, h3:after {content: "----";}
-  h3, h4 {font-size:12px !important;}
+  h3, h4, h5 {font-size:12px !important;}
   .bottom{padding:0px;}
+  a:link:after, a:visited:after {
+    content: "";
+  } 
 }
