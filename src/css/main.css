@@ -37,7 +37,7 @@ b {color: slategray;}
 .social-btns {padding: 0;}
 .img-li {display:inline; list-style-type:none;}
 .btn-link {display:inline-block; color: #808080; width:25px; height:25px; border: 5px transparent;}
-.icon-github {margin-left:10px;}
+.icon-github {margin-left:20px;}
 .icon-twitter:hover{color: #4099FF;}
 .icon-github:hover{color: #1E285F;}
 .icon-printer:hover{color: #C4AEAD;}
