@@ -22,7 +22,7 @@ To watch for file changes and build site:
     > grunt dev
 
 From the *app* folder, run the site using GoogleAppEngineLauncher or command line.   
-More details on running Python GAE server in the next section and on (google dev site)[https://developers.google.com/appengine/docs/python/tools/devserver].
+More details on running Python GAE server in the next section and on [google dev site](https://developers.google.com/appengine/docs/python/tools/devserver).
 
 ### Running Google App Engine dev webserver
 You can run the development web server either via GoogleAppEngineLauncher or command line.
