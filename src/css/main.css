@@ -53,7 +53,9 @@ a:hover {text-decoration:none !important;}
   .nav-subrow {margin-top:-35px;}
   small {font-size:8px !important;}
   hr {display:none;}
-  body { padding-top: 0px; margin-top: -10px; font-size:12px !important;}
+  body { padding-top: 0px; margin-top: -10px; 
+    font-weight: normal !important;
+    font-size:12px !important;}
   .bodycontent {padding-left: 5px;}
   .col-sm-4, .col-xs-6 {width:33.3% !important;}
   h3,h2{font-weight: bold !important;
@@ -61,7 +63,7 @@ a:hover {text-decoration:none !important;}
   h3:before, h3:after {content: "----";}
   h3, h4, h5 {font-size:12px !important;}
   .bottom{padding:0px;}
-  a:link:after, a:visited:after {
+  a:after, a:link:after, a:visited:after {
     content: "";
   } 
 }
