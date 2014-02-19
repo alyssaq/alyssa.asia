@@ -1,4 +1,4 @@
-[alyssa.asia](http://www.alyssa.asia) static site
+My online resume at [alyssa.asia](http://www.alyssa.asia)
 =========
 
 Powered By Google App Engine - Python 2.7
@@ -30,7 +30,16 @@ You can run the development web server either via GoogleAppEngineLauncher or com
 Command Line to start at port 9000 and admin port 9009:    
 *Note: Assumes that GoogleAppEngineLauncher has created a symlink to dev_appserver.py* 
 
-    > dev_appserver.py appengine_content/ --skip_sdk_update_check=yes --port=9000 --admin_port=9009
+    > dev_appserver.py app --skip_sdk_update_check=yes --port=9000 --admin_port=9009
+
+Open `http://localhost:9000`
+
+### Deploy to Google App Enging
+To upload the finished application to Google App Engine, run the following command:
+
+    > appcfg.py update app
+
+Or click **Deploy** in the Google App Engine Launcher and enter your Google username and password at the prompts.
 
 ### Get Started with app engine
 https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld
