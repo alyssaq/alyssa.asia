@@ -6,7 +6,7 @@ module.exports = {
       dest: '<%= production %>/',
       src: [
         //'js/*.js',
-        'css/**/*.{eot,svg,ttf,woff}',
+        'css/**/*.{eot,svg,ttf,woff,min.css}',
         'img/**/*.{jpg,jpeg,gif,png,ico,webp}'
       ]
     }]
