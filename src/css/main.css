@@ -28,19 +28,23 @@
 
 .purple1,
 h1,
-.icon-printer:hover
- {color: rgb(175, 75, 195);}
+.icon-printer:hover {
+  color: rgb(175, 75, 195);
+}
 .purple2,
 .row,
 .nav-subrow span,
 .icon-twitter:hover,
-.icon-github:hover
-{color: rgb(115, 91, 192);}
+.icon-github:hover {
+  color: rgb(115, 91, 192);
+}
 a {
   text-decoration: none;
   border-bottom: 1px dashed;
 }
-a:hover {border-bottom: 3px solid;}
+a:hover {
+  border-bottom: 3px solid;
+}
 a,
 a:hover {
   color: #333;
@@ -56,13 +60,14 @@ h1, h3, hr {margin: 0;}
 .nav-subrow, big{color:darkslategray;}
 b {color: slategray;}
 .social-btns {padding: 0;}
-.img-li {display:inline; list-style-type:none;margin:0px 6px;}
+.img-li {display:inline; list-style-type:none; margin:0px 6px;}
 .btn-link {display:inline-block; color: #DFDFDF; width:25px; height:25px; border: 5px transparent;}
-.navbar-fixed-top {background-image: url(http://subtlepatterns.com/patterns/dark_wood.png);}
+.navbar-fixed-top,footer {background-image: url(http://subtlepatterns.com/patterns/dark_wood.png);}
 .text-right {text-align:right;}
 .bottom {padding-bottom:40px;}
 a:hover {text-decoration:none !important;}
 .bodycontent {padding: 130px 5px 10px 5px;}
+footer {padding: 10px;}
 @media print {
   .navbar-fixed-top {position:relative !important;}
   .social-btns {display:none;}
