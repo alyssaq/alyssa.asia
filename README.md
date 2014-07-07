@@ -1,3 +1,4 @@
+
 My online resume at [alyssa.asia](http://www.alyssa.asia)
 =========
 
@@ -40,3 +41,6 @@ Or click **Deploy** in the Google App Engine Launcher and enter your Google user
 
 ### Get Started with app engine
 https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld
+
+### License
+[MIT](http://alyssaq.github.io/mit-license/)
