@@ -4,77 +4,60 @@
   <head>
     <meta charset="utf-8" />
     <title>Alyssa Quek</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta name="description" content="Alyssa Quek resume">
     <meta name="author"      content="Alyssa Quek">
-    
-    <link id="cssTheme" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/cyborg/bootstrap.min.css" rel="stylesheet">
+
+    <link id="cssTheme" href="/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <div class="navbar-fixed-top">
-      <h2 class="text-center name">Alyssa Quek</h2>
+    <header class="navbar-fixed-top">
+      <h1>Alyssa Quek</h1>
       <div class="container">
         <div class="nav-subrow row">
           <div class="col-xs-4 col-sm-4">
-            <span class="hidden-xs">Singapore</span>
+            <span class="hidden-xs">Singapore<br></span>
             <span class="visible-xs">+6584867050</span>
-            <span class="hidden-xs"><a class="btn-link icon-printer" href="javascript:window.print()"></a></span>
           </div>
           <div class="col-xs-4 col-sm-4 text-center">
             <ul class="social-btns">
               <li class="img-li">
                 <a class="btn-link icon-twitter" href="https://twitter.com/alyssaquek" target="_blank"></a>
               </li>
+              <li class="img-li hidden-xs">
+                <a class="btn-link icon-printer" href="javascript:window.print()"></a>
+              </li>
               <li class="img-li">
                 <a class="btn-link icon-github" href="https://github.com/alyssaq" class="padding-left" target="_blank"></a>
               </li>
-            </ul> 
+            </ul>
           </div>
           <div class="col-xs-4 col-sm-4 text-right">
             <span class="hidden-xs"> +65 8485 7050<br></span>
-            <span class="visible-xs">alyssaquek<br>@gmail</span>
+            <span class="visible-xs">alyssaquek@gmail</span>
             <span class="hidden-xs">alyssaquek@gmail.com</span>
           </div>
         </div>
-        <div class="row text-center hidden-print">
-          <button class="btn btn-primary themeBtn text-center">Theme me!</button>
+        <!-- <div class="row">
+          <div class="col-xs-4 col-sm-4">
+            <span class="hidden-xs"><a class="btn-link icon-printer text-left" href="javascript:window.print()"></a></span>
+          </div>
+          <div class="col-xs-4 col-sm-4 text-center">
+            <button class="btn btn-primary hidden-print">Theme me!</button>
+          </div>
+          <div class="col-xs-4 col-sm-4"></div> -->
         </div>
       </div>
-    </div>
-    <div class="container bodycontent">
+    </header>
+    <section class="container bodycontent">
     {% block bodycontent %}
     {% endblock %}
-    </div>
-
-    <!-- begin olark code 
-    <script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-    f[z]=function(){
-    (a.s=a.s||[]).push(arguments)};var a=f[z]._={
-    },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-    f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-    0:+new Date};a.P=function(u){
-    a.p[u]=new Date-a.p[0]};function s(){
-    a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-    hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-    return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-    b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-    b.contentWindow[g].open()}catch(w){
-    c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-    var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-    b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-    loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-    /* custom configuration goes here (www.olark.com/documentation) */
-    olark.identify('4187-569-10-6414');/*]]>*/</script><noscript><a href="https://www.olark.com/site/4187-569-10-6414/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
-     end olark code -->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
-    <!-- inline JS form main.js -->
-    <script type="text/javascript">
-    $(document).ready(function(){var a=0,b=["journal","amelia","cyborg"];$(".themeBtn").click(function(){$("#cssTheme").attr("href");$("#cssTheme").attr("href","//netdna.bootstrapcdn.com/bootswatch/3.0.0/"+b[a]+"/bootstrap.min.css");a=(a+1)%3;return!1})});
-    </script>
+    </section>
+    <footer class="visible-print-block text-right">
+      http://www.alyssa.asia
+    </footer>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-25781435-1']);

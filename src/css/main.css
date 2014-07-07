@@ -1,5 +1,3 @@
-/* Just click to select the code */
- 
 @charset "UTF-8";
 @font-face {
   font-family: "icons";
@@ -24,36 +22,55 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-twitter:before {content: "t";} 
-.icon-github:before  {content: "g";} 
+.icon-twitter:before {content: "t";}
+.icon-github:before  {content: "g";}
 .icon-printer:before {content: "p";}
 
-body { padding-top: 153px; }
-.name {font-weight: bold; color:black;}
-h3 {text-align: center;}
-.row{color:darkseagreen;}
+.purple1,
+h1,
+.icon-printer:hover
+ {color: rgb(175, 75, 195);}
+.purple2,
+.row,
+.nav-subrow span,
+.icon-twitter:hover,
+.icon-github:hover
+{color: rgb(115, 91, 192);}
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+a:hover {border-bottom: 3px solid;}
+a,
+a:hover {
+  color: #333;
+  border-bottom-color: rgb(175, 75, 195);
+}
+body { padding-top: 130px; }
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px 0px 3px 0px;
+}
+h1, h2, .text-center {text-align: center;}
+h1, h3, hr {margin: 0;}
 .nav-subrow, big{color:darkslategray;}
 b {color: slategray;}
 .social-btns {padding: 0;}
-.img-li {display:inline; list-style-type:none;}
-.btn-link {display:inline-block; color: #808080; width:25px; height:25px; border: 5px transparent;}
-.icon-github {margin-left:20px;}
-.icon-twitter:hover{color: #4099FF;}
-.icon-github:hover{color: #1E285F;}
-.icon-printer:hover{color: #C4AEAD;}
-.navbar-fixed-top {background-color: white;}
-.text-right {padding-right:5px;}
+.img-li {display:inline; list-style-type:none;margin:0px 6px;}
+.btn-link {display:inline-block; color: #DFDFDF; width:25px; height:25px; border: 5px transparent;}
+.navbar-fixed-top {background-image: url(http://subtlepatterns.com/patterns/dark_wood.png);}
+.text-right {text-align:right; padding-right:5px;}
 .bottom {padding-bottom:40px;}
-.highlight-o {color: #FA6900}
-.highlight-p {color: #AF4BC3}
 a:hover {text-decoration:none !important;}
+
 @media print {
   .navbar-fixed-top {position:relative !important;}
   .social-btns {display:none;}
   .nav-subrow {margin-top:-35px;}
   small {font-size:8px !important;}
   hr {display:none;}
-  body { padding-top: 0px; margin-top: -10px; 
+  body { padding-top: 0px; margin-top: -10px;
     font-weight: normal !important;
     font-size:12px !important;}
   .bodycontent {padding-left: 5px;}
@@ -61,9 +78,9 @@ a:hover {text-decoration:none !important;}
   h3,h2{font-weight: bold !important;
     padding:5px 0px 5px 0px!important; margin:0px !important;}
   h3:before, h3:after {content: "----";}
-  h3, h4, h5 {font-size:12px !important;}
+  h2, h3, h4, h5 {font-size:12px !important;}
   .bottom{padding:0px;}
   a:after, a:link:after, a:visited:after {
     content: "";
-  } 
+  }
 }
