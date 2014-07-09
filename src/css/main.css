@@ -62,7 +62,7 @@ b {color: slategray;}
 .social-btns {padding: 0;}
 .img-li {display:inline; list-style-type:none; margin:0px 6px;}
 .btn-link {display:inline-block; color: #DFDFDF; width:25px; height:25px; border: 5px transparent;}
-.navbar-fixed-top,footer {background-image: url(http://subtlepatterns.com/patterns/dark_wood.png);}
+.navbar-fixed-top,footer {background-image: url(/img/wood.png);}
 .text-right {text-align:right;}
 .bottom {padding-bottom:40px;}
 a:hover {text-decoration:none !important;}

@@ -14,7 +14,7 @@ handlers:
 
 - url: /css
   static_dir: css
-  expiration: 1d
+  expiration: 30d
   http_headers:
     Vary: Accept-Encoding
 
@@ -22,8 +22,10 @@ handlers:
   static_dir: js
 
 - url: /img
-  expiration: 1d
   static_dir: img
+  expiration: 30d
+  http_headers:
+    Vary: Accept-Encoding
 
 - url: /.*
   script: webserver.application
