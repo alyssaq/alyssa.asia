@@ -74,9 +74,9 @@
             var l = document.createElement('link'); l.rel = 'stylesheet';
             l.href = sheet;
             h.parentNode.insertBefore(l, h);
-            Array.prototype.slice.call(document.querySelectorAll('.defer')).forEach(function(elem) { elem.style.display = 'block'
-            });
           });
+          Array.prototype.slice.call(document.querySelectorAll('.defer')).forEach(
+            function(elem) {elem.style.display = 'block'});
         };
         var raf = requestAnimationFrame || mozRequestAnimationFrame ||
             webkitRequestAnimationFrame || msRequestAnimationFrame;
