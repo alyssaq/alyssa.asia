@@ -67,6 +67,7 @@ b {color: slategray;}
 .bottom {padding-bottom:40px;}
 a:hover {text-decoration:none !important;}
 .bodycontent {padding: 130px 5px 10px 5px;}
+.row {margin:0;}
 footer {padding: 10px;}
 @media print {
   .navbar-fixed-top {position:relative !important;}

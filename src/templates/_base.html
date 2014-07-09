@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta name="description" content="Alyssa Quek resume">
     <meta name="author"      content="Alyssa Quek">
-
-    <link id="cssTheme" href="/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style type="text/css">
+    .defer {display:none}
+    h1 {color: rgb(175, 75, 195); text-align: center;}
+    </style>
   </head>
-
   <body>
     <header class="navbar-fixed-top">
       <h1>Alyssa Quek</h1>
-      <div class="container">
+      <div class="container defer">
         <div class="nav-subrow row">
           <div class="col-xs-4 col-sm-4">
             <span class="hidden-xs">Singapore<br></span>
@@ -51,20 +52,38 @@
         </div>
       </div>
     </header>
-    <section class="container bodycontent">
+    <section class="container bodycontent defer">
     {% block bodycontent %}
     {% endblock %}
     </section>
-    <footer class="visible-print-block text-right">
+    <footer class="visible-print-block text-right defer">
       http://www.alyssa.asia
     </footer>
 
-    <footer class="hidden-print text-center">
+    <footer class="hidden-print text-center defer">
       <a class="purple1" href="https://github.com/alyssaq/alyssa.asia">
       Source code on github
       </a>
     </footer>
     <script type="text/javascript">
+      (function(window) {
+        var cb = function() {
+          var sheets = ['css/bootstrap.min.css', 'css/main.css'];
+          var h = document.getElementsByTagName('head')[0];
+          sheets.forEach(function(sheet) {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = sheet;
+            h.parentNode.insertBefore(l, h);
+            Array.prototype.slice.call(document.querySelectorAll('.defer')).forEach(function(elem) { elem.style.display = 'block'
+            });
+          });
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+      })(window);
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-25781435-1']);
       _gaq.push(['_trackPageview']);
