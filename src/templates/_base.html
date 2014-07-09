@@ -67,16 +67,19 @@
     </footer>
     <script type="text/javascript">
       (function(window) {
+        var display_html = function() {
+          Array.prototype.slice.call(document.querySelectorAll('.defer')).forEach(
+            function(elem) {elem.style.display = 'block'});
+        }
         var cb = function() {
           var sheets = ['css/bootstrap.min.css', 'css/main.css'];
           var h = document.getElementsByTagName('head')[0];
-          sheets.forEach(function(sheet) {
+          sheets.forEach(function(sheet, i) {
             var l = document.createElement('link'); l.rel = 'stylesheet';
             l.href = sheet;
+            l.onload = function() { if (i === 0) display_html(); }
             h.parentNode.insertBefore(l, h);
           });
-          Array.prototype.slice.call(document.querySelectorAll('.defer')).forEach(
-            function(elem) {elem.style.display = 'block'});
         };
         var raf = requestAnimationFrame || mozRequestAnimationFrame ||
             webkitRequestAnimationFrame || msRequestAnimationFrame;
