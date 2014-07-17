@@ -70,6 +70,7 @@ a:hover {text-decoration:none !important;}
 .row {margin:0;}
 footer {padding: 10px;}
 @media print {
+  .printme {display:block !important;}
   .navbar-fixed-top {position:relative !important;}
   .social-btns {display:none;}
   .nav-subrow {margin-top:-35px;}
